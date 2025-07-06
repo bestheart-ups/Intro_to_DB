@@ -1,13 +1,13 @@
 import mysql.connector 
-from mysql.connector import errorcode
+from mysql.connector import Error 
 
 def create_database():
     try:
         # Connect to MySQL server (adjust user and password as needed)
         connection = mysql.connector.connect(
             host='localhost',
-            user='root',
-            password='Movetina@04'  # Replace with your MySQL root password
+            user='your_mysql_username',
+            password='your_mysql_password'  # Replace with your MySQL root password
         )
         cursor = connection.cursor()
 
